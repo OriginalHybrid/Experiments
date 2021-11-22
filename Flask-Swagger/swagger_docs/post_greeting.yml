@@ -1,0 +1,23 @@
+description: "This is a simple API which returns Custom Greeting"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+parameters:
+- in: "body"
+  name: "/post_greeting"
+  description: "Accepts your name and Returns Hello <name>"
+  required: true
+  schema:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+        example : "John"
+responses:
+  405:
+    description: "Invalid input"
+  200:
+    description: "Successful"
+  500:
+    description: "Server Timeout"

@@ -1,0 +1,12 @@
+description: "This is a simple GET API which returns Hello world"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+responses:
+  405:
+    description: "Invalid input"
+  200:
+    description: "Successful"
+  500:
+    description: "Server Timeout"
